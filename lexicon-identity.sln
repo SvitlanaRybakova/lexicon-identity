@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lexicon-identity", "lexicon-identity\lexicon-identity.csproj", "{BE283641-D8B4-461B-AD0A-AC0952B72E01}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE283641-D8B4-461B-AD0A-AC0952B72E01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE283641-D8B4-461B-AD0A-AC0952B72E01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE283641-D8B4-461B-AD0A-AC0952B72E01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE283641-D8B4-461B-AD0A-AC0952B72E01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8EB80D14-E107-4FA5-AE8E-19D564C4FC51}
+	EndGlobalSection
+EndGlobal
