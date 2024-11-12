@@ -1,4 +1,5 @@
 using lexicon_identity.Data;
+using lexicon_identity.Extensions;
 using lexicon_identity.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -7,7 +8,7 @@ namespace lexicon_identity
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +20,7 @@ namespace lexicon_identity
 
             //change declaration and skaffold identity pages again
             builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             builder.Services.AddControllersWithViews();
 
@@ -35,6 +37,8 @@ namespace lexicon_identity
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
+            await app.SeedDataAsync();
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
